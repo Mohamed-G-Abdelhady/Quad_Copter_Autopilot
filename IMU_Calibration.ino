@@ -1,4 +1,4 @@
-% calculate the Accel and Gyro of the IMU
+% calculate the offsets of Accel and Gyro in mpu6050
 % hold the IMU still in a horizontal attitude till the offsets converge to contsant values Then use them to 
 % update the offsets in your code
 %    obj.setXAccelOffset(ax_offset);
@@ -7,6 +7,7 @@
 %    obj.setXGyroOffset(gx_offset);
 %    obj.setYGyroOffset(gy_offset);
 %    obj.setZGyroOffset(gz_offset);
+% the I2C developers library for MPU6050 is needed https://github.com/jrowberg/i2cdevlib/tree/master/Arduino 
 
 #include "I2Cdev.h"
 #include "MPU6050.h"
